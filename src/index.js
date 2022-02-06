@@ -13,6 +13,7 @@ if (process.env.NODE_ENV !== "production") {
 }
 
 const createWindow = () => {
+  //fx para crear una nueva ventana
     const win = new BrowserWindow({
       width: 800,
       height: 600
@@ -26,6 +27,8 @@ const createWindow = () => {
 
     // win.loadFile('src/index.html')
     const mainMenu = Menu.buildFromTemplate(templateMenu)
+
+    //menu personalizado
     Menu.setApplicationMenu(mainMenu)
   }
 
